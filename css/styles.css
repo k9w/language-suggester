@@ -1,0 +1,8 @@
+body {
+  margin: 100px;
+}
+
+/* Don't display any of the DIVs at the start. */
+.mobile-friendly.website, mobile-app, both-website-and-mobile-app, neither-website-nor-mobile-app {
+  display: none;
+}
