@@ -35,8 +35,6 @@ _For any problems, please file an issue on Github. Pull Requests welcome._
 - _No known issues yet._
 - _Please report any you find._
 
-* _Any known issues_
-* _should go here_
 
 ## License
 
