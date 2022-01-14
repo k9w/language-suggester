@@ -3,6 +3,10 @@ body {
 }
 
 /* Don't display any of the DIVs at the start. */
-.mobile-friendly.website, mobile-app, both-website-and-mobile-app, neither-website-nor-mobile-app {
+.mobile-friendly-website,
+.mobile-app,
+.both-website-and-mobile-app,
+.neither-website-nor-mobile-app,
+.where-will-the-code-run_no-answer {
   display: none;
 }

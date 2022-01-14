@@ -4,40 +4,45 @@ $(document).ready(function () {
     const where-will-the-code-run = $("input.where-will-the-code-run_answer").val();
 
       if (where-will-the-code-run === "mobile-friendly-website") {
+        $('.mobile-friendly-website').show();
         $('.mobile-app').hide();
         $('.both-website-and-mobile-app').hide();
         $('.neither-website-nor-mobile-app').hide();
-        $('.mobile-friendly-website').show();
+        $('.where-will-the-code-run_no-answer').hide();
+
       }
 
       if (where-will-the-code-run === "mobile-app") {
         $('.mobile-friendly-website').hide();
+        $('.mobile-app').show();
         $('.both-website-and-mobile-app').hide();
         $('.neither-website-nor-mobile-app').hide();
         $('.where-will-the-code-run_no-answer').hide();
-        $('.mobile-app').show();
+
       }
 
       if (where-will-the-code-run === "both-website-and-mobile-app") {
+        $('.mobile-friendly-website').hide();
         $('.mobile-app').hide();
-        $('.both-website-and-mobile-app').hide();
+        $('.both-website-and-mobile-app').show();
         $('.neither-website-nor-mobile-app').hide();
         $('.where-will-the-code-run_no-answer').hide();
-        $('.mobile-friendly-website').show();
+
       }
 
       elseif (where-will-the-code-run === "neither-website-nor-mobile-app") {
+        $('.mobile-friendly-website').hide();
         $('.mobile-app').hide();
-        $('.bith-website-and-mobile-app').hide();
-        $('.neither-website-nor-mobile-app').hide();
+        $('.both-website-and-mobile-app').hide();
+        $('.neither-website-nor-mobile-app').show();
         $('.where-will-the-code-run_no-answer').hide();
-        $('.mobile-friendly-website').show();
+
       }
 
       else {
         $('.mobile-friendly-website').hide();
         $('.mobile-app').hide();
-        $('.bith-website-and-mobile-app').hide();
+        $('.both-website-and-mobile-app').hide();
         $('.neither-website-nor-mobile-app').hide();
         $('.where-will-the-code-run_no-answer').show();
       }
