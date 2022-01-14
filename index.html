@@ -17,18 +17,30 @@
         <p>Choose from the choices below.</p>
       </div>
       <form action="" method="get" class="chooseLanguage">
-        <div class="askForLanguageForm">
+        <div class="askFiveQuestionsToChooseLanguage">
           <label for="languageChosen">Choose a language here: </label>
 	  <input id="languageChosen" type="text" class="" name="languageChosen">
-	        <label for="compiled-interpreted">Compiled or Interpreted?</label>
-      <select id="hand">
-        <option value="compiled">Compiled</option>
-        <option value="interpreted">Interpreted</option>
-      </select>
-      <button type="submit" class="btn">Submit</button>
-      <button type="clear" class="btn">Clear</button>
+
+	  <label for="where-will-the-code-run_label">Where will the code run?</label>
+          <select id="where-will-the-code-run_select">
+            <option value="website_select">Mobile-friendly Website</option>
+            <option value="mobile-app_select">Mobile App</option>
+	    <option value="both_website_mobile-app_select">Both</option>
+	    <option value="neither_website_mobile-app_select">Other</option>
+          </select>
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="clear" class="btn">Clear</button>
         </div>
       </form>
+      <form action="" method=>
+	  <label for="compiled-interpreted_label">Compiled or Interpreted?</label>
+          <select id="compiled-interpreted_select">
+            <option value="compiled">Compiled</option>
+            <option value="interpreted">Interpreted</option>
+          </select>
+      </form>
+<!-- Need to ask at least five questions. Got two so far. -->      
       <div id="Ruby">
 	<p>Ruby</p>
       </div>
