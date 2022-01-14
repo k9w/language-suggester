@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <!-- Open links in a new tab. -->
-    <base target="_blank">
     <!-- Give page some responsiveness for mobile. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -26,25 +24,23 @@
 	    <option value="both-website-and-mobile-app">Both</option>
 	    <option value="neither-website-nor-mobile-app">Other</option>
           </select>
-
           <button type="submit" class="btn">Submit</button>
+	  <div class="mobile-friendly-website">
+	    <p>JavaScript</p>
+          </div>
+          <div class="mobile-app">
+	    <p>Swift, Kotlin. Which mobile platform?</p>
+	  </div>
+          <div class="both-website-and-mobile-app">
+	    <p>C#, Ruby</p>
+	  </div>
+          <div class="neither-website-nor-mobile-app">
+	    <p>C, C++, Go, Rust</p>
+	  </div>
+          <div class="where-will-the-code-run_no-answer">
+	    <p>JavaScript</p>
+	  </div>
         </div>
-	<div class="mobile-friendly-website">
-	  <p>JavaScript</p>
-	</div>
-        <div class="mobile-app">
-	  <p>Swift, Kotlin. Which mobile platform?</p>
-	</div>
-        <div class="both-website-and-mobile-app">
-	  <p>C#, Ruby</p>
-	</div>
-        <div class="neither-website-nor-mobile-app">
-	  <p>C, C++, Go, Rust</p>
-	</div>
-        <div class="where-will-the-code-run_no-answer">
-	  <p>JavaScript</p>
-	</div>
-
       </form>
       <form action="" method="">
 	<label for="compiled-interpreted_label">Compiled or Interpreted?</label>
@@ -55,28 +51,6 @@
         <label for="languageChosen">Anything else we didn't cover?</label>
 	<input id="languageChosen" type="text" class="" name="languageChosen">
       </form>
-<!-- Need to ask at least five questions. Got two so far. -->      
-      <div id="Ruby">
-	<p>Ruby</p>
-      </div>
-      <div id="C#">
-	<p>C#</p>
-      </div>
-      <div id="JavaScript">
-	<p>JavaScript</p>
-      </div>
-      <div id="Go">
-	<p>Go</p>
-      </div>
-      <div id="Python">
-	<p>Python</p>
-      </div>
-      <div id="Rust">
-	<p>Rust</p>
-      </div>
-      <div id="Swift">
-	<p>Swift</p>
-      </div>
     </div>
   </body>
 </html>
