@@ -69,14 +69,5 @@ $(document).ready(function() {
       match += 15;
     }
   
-    
-    if (ageJs >= 18) {
-      $('#over18').show();
-    }
-
-    else {
-      $('#under18').show();
-    }
-
   });
 });
