@@ -32,8 +32,8 @@ page on Friday January 14th 2022. Check out more of my work at:
 
 _For any problems, please file an issue on Github. Pull Requests welcome._
 
-- _No known issues yet._
-- _Please report any you find._
+- _After a choice is selected and submitted, the page returns no results._
+- _Also after a choice is selected and submitted, the dropdown reverts to the first choice._
 
 
 ## License
