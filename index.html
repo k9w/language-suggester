@@ -16,17 +16,33 @@
       <h1>What programming language would you like to learn?</h1>
       <p>Choose from the choices below.</p>
     </div>
-    <form action="" method="get" class="where-will-the-code-run_form">
-      <div class="askFiveQuestionsToChooseLanguage">
-        <label for="where-will-the-code-run_question">Where will the code run?</label>
-        <select class="where-will-the-code-run_answer">
-          <option value="mobile-friendly-website">Mobile-friendly Website</option>
-          <option value="mobile-app">Mobile App</option>
-          <option value="both-website-and-mobile-app">Both</option>
-          <option value="neither-website-nor-mobile-app">Other</option>
-        </select>
-        <button type="submit" class="btn">Submit</button>
+    <form id="whereWillTheCodeRun">
+      <p>Where will the code run?</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="choiceWhereCodeRuns" value="mobileFriendlyWebsite">
+          Mobile-friendly Website
+        </label>
       </div>
+        <div class="radio">
+        <label>
+          <input type="radio" name="choiceWhereCodeRuns" value="mobileApp">
+          Mobile App
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="choiceWhereCodeRuns" value="bothWebsiteAndMobileApp">
+          Both Website and Mobile App
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="choiceWhereCodeRuns" value="neitherWebsiteNorMobileApp">
+          Not on a Website or in an App (back-end, database, infrastructure, other)
+        </label>
+      </div>
+      <button type="submit" class="btn">Submit</button>
     </form>
     <div class="mobile-friendly-website">
       <p>On the web: JavaScript</p>
