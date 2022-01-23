@@ -5,14 +5,39 @@
 // User Interface Logic
 
 $(document).ready(function () {
-  $("form#whereWillTheCodeRun").submit(function (event) {
+  $("form#questions").submit(function (event) {
     event.preventDefault();
-    const answerWhereCodeRuns = $("input:radio[name=choiceWhereCodeRuns]:checked").val();
-    let result1;
-    if (answerWhereCodeRuns === "mobileFriendlyWebsite") {
-        $("#whereWillTheCodeRun").hide();
-        $("#mobileFriendlyWebsite").show();
-    } else if (answerWhereCodeRuns === "mobile-app") {
+    let question0;
+    let question1;
+    let question2;
+    let question3;
+    let question4;
+    let answer = 0;
+    if (question0 === "choice1") {
+      answer = answer + 1;
+    }
+    if (question1 === "choice1") {
+      answer = answer + 1;
+    }
+
+    if (question2 === "choice1") {
+      answer = answer + 1;
+    }
+
+    if (question3 === "choice1") {
+      answer = answer + 1;
+    }
+
+    if (question4 === "choice1") {
+      answer = answer + 1;
+    }
+    alert(answer);
+  });
+});
+
+
+/*
+
         $("#whereWillTheCodeRun").hide();
         $('#mobileApp').show();
     } else if (answerWhereCodeRuns === "bothWebsiteAndMobileApp") {
@@ -23,6 +48,9 @@ $(document).ready(function () {
         $("#neitherWebsiteNorMobileApp").show();
       }
     
-  });
-});
+
+        $("#whereWillTheCodeRun").hide();
+        $("#mobileFriendlyWebsite").show();
+*/
+
 

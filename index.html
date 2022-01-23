@@ -13,52 +13,78 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>What programming language would you like to learn?</h1>
-      <p>Choose from the choices below.</p>
+      <h1>What programming language should you learn first?</h1>
+      <p>Answer the questions below for a recommendation.</p>
     </div>
-    <form id="whereWillTheCodeRun">
-      <p>Where will the code run?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="choiceWhereCodeRuns" value="mobileFriendlyWebsite">
-          Mobile-friendly Website
-        </label>
-      </div>
-        <div class="radio">
-        <label>
-          <input type="radio" name="choiceWhereCodeRuns" value="mobileApp">
-          Mobile App
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="choiceWhereCodeRuns" value="bothWebsiteAndMobileApp">
-          Both Website and Mobile App
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="choiceWhereCodeRuns" value="neitherWebsiteNorMobileApp">
-          Not on a Website or in an App (back-end, database, infrastructure, other)
-        </label>
-      </div>
+    <form id="questions">
+      <p>Do binary numbers start with 0 or 1?</p>
+      <label>
+        <input type="radio" name="question0" value="choice0">
+        0
+      </label>
+      <label>
+        <input type="radio" name="question0" value="choice1">
+        1
+      </label>
+      <br>
+      <br>
+      <p>Do you like 0 or 1 better?</p>
+      <label>
+        <input type="radio" name="question1" value="choice0">
+        0
+      </label>
+      <label>
+        <input type="radio" name="question1" value="choice1">
+        1
+      </label>
+      <br>
+      <br>
+      <p>Is the answer to life 0 or 1?</p>
+      <label>
+        <input type="radio" name="question2" value="choice0">
+        0
+      </label>
+      <label>
+        <input type="radio" name="question2" value="choice1">
+        1
+      </label>
+      <br>
+      <br>
+      <p>Is the next question about 0 or 1?</p>
+      <label>
+        <input type="radio" name="question3" value="choice0">
+        0
+      </label>
+      <label>
+        <input type="radio" name="question3" value="choice1">
+        1
+      </label>
+      <br>
+      <br>
+      <p>Does binary start with 0 or 1?</p>
+      <label>
+        <input type="radio" name="question4" value="choice0">
+        0
+      </label>
+      <label>
+        <input type="radio" name="question4" value="choice1">
+        1
+      </label>
+      <br>
+      <br>
       <button type="submit" class="btn">Submit</button>
+      <button type="clear" class="btn">Clear</button>
     </form>
-    <div class="mobile-friendly-website">
-      <p>On the web: JavaScript</p>
+      <br>
+    <div id="ruby">
+      <p>Ruby</p>
     </div>
-    <div class="mobile-app">
-      <p>Mobile app: Swift, Kotlin. Which mobile platform?</p>
+    <div id="csharp">
+      <p>C#</p>
     </div>
-    <div class="both-website-and-mobile-app">
-      <p>Both web and mobile: C#, Ruby</p>
+    <div id="javascript">
+      <p>JavaScript</p>
     </div>
-    <div class="neither-website-nor-mobile-app">
-      <p>Neither web nor mobile; something else entirely: C, C++, Go, Rust</p>
-    </div>
-    <div class="where-will-the-code-run_no-answer">
-      <p>No answer: JavaScript</p>
-      </div>
-    </div>
+   </div>
   </body>
 </html>
