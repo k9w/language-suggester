@@ -1,7 +1,16 @@
 // Business Logic
 
-function returnLanguage(answer) {
+// let language;
 
+function chooseLanguage(answer) {
+
+  if (answer <= 1) {
+    language = "#ruby";
+  } else if (answer <= 3) {
+    language = "#csharp";
+  } else if (answer <= 5) {
+    language = "#javascript";
+  }
 }
 
 // User Interface Logic
@@ -33,26 +42,8 @@ $(document).ready(function () {
     if (question4 === "choice1") {
       answer++;
     }
-    alert(answer);
+    chooseLanguage(answer);
+    $(".language").hide();
+    $(language).show();
   });
 });
-
-
-/*
-
-        $("#whereWillTheCodeRun").hide();
-        $('#mobileApp').show();
-    } else if (answerWhereCodeRuns === "bothWebsiteAndMobileApp") {
-        $("#whereWillTheCodeRun").hide();
-        $("#bothWebsiteAndMobileApp").show();
-    } else if (answerWhereCodeRuns === "neitherWebsiteNorMobileApp") {
-        $("#whereWillTheCodeRun").hide();
-        $("#neitherWebsiteNorMobileApp").show();
-      }
-    
-
-        $("#whereWillTheCodeRun").hide();
-        $("#mobileFriendlyWebsite").show();
-*/
-
-
