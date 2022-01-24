@@ -1,9 +1,6 @@
 // Business Logic
 
-// let language;
-
 function chooseLanguage(answer) {
-
   if (answer <= 1) {
     language = "#ruby";
   } else if (answer <= 3) {
@@ -15,9 +12,16 @@ function chooseLanguage(answer) {
 
 // User Interface Logic
 
+function hideLanguage() {
+  $(".language").hide();
+}
+
+
+
 $(document).ready(function () {
   $("form#questions").submit(function (event) {
     event.preventDefault();
+    hideLanguage();
     let question0 = $("input:radio[name=question0]:checked").val();
     let question1 = $("input:radio[name=question1]:checked").val();
     let question2 = $("input:radio[name=question2]:checked").val();
@@ -43,7 +47,7 @@ $(document).ready(function () {
       answer++;
     }
     chooseLanguage(answer);
-    $(".language").hide();
     $(language).show();
+    document.getElementById("reset").onClick = hideLanguage;
   });
 });
